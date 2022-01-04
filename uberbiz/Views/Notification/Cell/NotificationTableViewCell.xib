@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="120" id="KGk-i7-Jjw" customClass="NotificationTableViewCell" customModule="uberbiz" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="111"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="111"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tH8-Ge-dkG">
+                        <rect key="frame" x="24" y="16" width="336" height="17"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                        <color key="textColor" red="0.0" green="0.45882352939999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="751" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="39s-9V-cgE">
+                        <rect key="frame" x="24" y="35" width="336" height="29.5"/>
+                        <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</string>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="01 Jan 2021, 00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nVN-Yh-b8d">
+                        <rect key="frame" x="24" y="80.5" width="336" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.53333333329999999" green="0.5568627451" blue="0.61960784310000006" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chevron-right-icon" translatesAutoresizingMaskIntoConstraints="NO" id="oNw-zW-z2W">
+                        <rect key="frame" x="376" y="48.5" width="14" height="14"/>
+                        <color key="tintColor" red="0.53333333329999999" green="0.5568627451" blue="0.61960784310000006" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="14" id="58V-Pa-z3i"/>
+                            <constraint firstAttribute="height" constant="14" id="XjA-0l-nnC"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OI0-6R-ceB">
+                        <rect key="frame" x="24" y="110" width="390" height="1"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.25" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="viw-fT-OXz"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="oNw-zW-z2W" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="1sF-gN-6gP"/>
+                    <constraint firstItem="nVN-Yh-b8d" firstAttribute="top" secondItem="39s-9V-cgE" secondAttribute="bottom" constant="16" id="3gJ-pJ-6ug"/>
+                    <constraint firstItem="39s-9V-cgE" firstAttribute="top" secondItem="tH8-Ge-dkG" secondAttribute="bottom" constant="2" id="7R7-fh-zhC"/>
+                    <constraint firstItem="OI0-6R-ceB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="24" id="BKs-qx-Ig8"/>
+                    <constraint firstAttribute="trailing" secondItem="OI0-6R-ceB" secondAttribute="trailing" id="C0R-ln-N3l"/>
+                    <constraint firstItem="nVN-Yh-b8d" firstAttribute="leading" secondItem="39s-9V-cgE" secondAttribute="leading" id="CGu-Dp-jZW"/>
+                    <constraint firstAttribute="bottom" secondItem="OI0-6R-ceB" secondAttribute="bottom" id="Fsu-Eo-GZC"/>
+                    <constraint firstItem="39s-9V-cgE" firstAttribute="leading" secondItem="tH8-Ge-dkG" secondAttribute="leading" id="cDY-uz-eGB"/>
+                    <constraint firstItem="oNw-zW-z2W" firstAttribute="leading" secondItem="tH8-Ge-dkG" secondAttribute="trailing" constant="16" id="cNQ-tp-GAn"/>
+                    <constraint firstItem="nVN-Yh-b8d" firstAttribute="trailing" secondItem="39s-9V-cgE" secondAttribute="trailing" id="dEo-Fo-ioh"/>
+                    <constraint firstAttribute="trailing" secondItem="oNw-zW-z2W" secondAttribute="trailing" constant="24" id="iIA-MD-BNw"/>
+                    <constraint firstItem="tH8-Ge-dkG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="24" id="ndS-gr-aOF"/>
+                    <constraint firstItem="39s-9V-cgE" firstAttribute="trailing" secondItem="tH8-Ge-dkG" secondAttribute="trailing" id="qYx-xw-CYM"/>
+                    <constraint firstItem="tH8-Ge-dkG" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="swQ-mx-fM8"/>
+                    <constraint firstAttribute="bottom" secondItem="nVN-Yh-b8d" secondAttribute="bottom" constant="16" id="wlT-5V-EFZ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="notificationDateL" destination="nVN-Yh-b8d" id="zqt-SO-Hra"/>
+                <outlet property="notificationMessageL" destination="39s-9V-cgE" id="CoC-6k-Snc"/>
+                <outlet property="notificationTitleL" destination="tH8-Ge-dkG" id="GBg-ds-8ag"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="76.004464285714278"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="chevron-right-icon" width="8" height="14"/>
+    </resources>
+</document>

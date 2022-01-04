@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OnBoardingViewController" customModule="uberbiz" customModuleProvider="target">
+            <connections>
+                <outlet property="nextButton" destination="smN-xd-rhZ" id="GtL-RJ-WlU"/>
+                <outlet property="onBoardingCollectionView" destination="VcM-iU-j26" id="2Rs-c5-fnk"/>
+                <outlet property="skipButton" destination="0wS-dZ-reb" id="szR-pO-XDq"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outletCollection property="dotViews" destination="nOT-fH-eum" collectionClass="NSMutableArray" id="ePm-YA-ZvK"/>
+                <outletCollection property="dotViews" destination="wUm-gB-fgp" collectionClass="NSMutableArray" id="ZlL-2G-Wbc"/>
+                <outletCollection property="dotViews" destination="gv9-dr-5uk" collectionClass="NSMutableArray" id="ZbF-yD-frr"/>
+                <outletCollection property="dotViewsWidth" destination="x2m-w4-DhE" collectionClass="NSMutableArray" id="fQn-Q6-6Ww"/>
+                <outletCollection property="dotViewsWidth" destination="2dF-1m-ouF" collectionClass="NSMutableArray" id="EjD-Ln-Ta7"/>
+                <outletCollection property="dotViewsWidth" destination="KnJ-zD-PPU" collectionClass="NSMutableArray" id="qSF-ah-tCj"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="VcM-iU-j26">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="Ijk-M8-vga">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="pbz-88-1RV"/>
+                        <outlet property="delegate" destination="-1" id="suZ-8l-f8N"/>
+                    </connections>
+                </collectionView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="smN-xd-rhZ" customClass="UberBizButton" customModule="uberbiz" customModuleProvider="target">
+                    <rect key="frame" x="24" y="764" width="366" height="50"/>
+                    <color key="backgroundColor" red="0.81176470588235294" green="0.82352941176470584" blue="0.8666666666666667" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="RSc-gi-Val"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                    <state key="normal" title="Next">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="nextAction:" destination="-1" eventType="touchUpInside" id="nrE-Gt-m0M"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0wS-dZ-reb">
+                    <rect key="frame" x="360" y="68" width="30" height="30"/>
+                    <state key="normal" title="Skip">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="skipAction:" destination="-1" eventType="touchUpInside" id="8d4-dm-Zvc"/>
+                    </connections>
+                </button>
+                <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="aWR-rm-gcR">
+                    <rect key="frame" x="147.5" y="702" width="119" height="14"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nOT-fH-eum">
+                            <rect key="frame" x="0.0" y="0.0" width="75" height="14"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="14" id="PLX-ii-SlX"/>
+                                <constraint firstAttribute="width" constant="75" id="x2m-w4-DhE"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wUm-gB-fgp">
+                            <rect key="frame" x="83" y="0.0" width="14" height="14"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="14" id="2dF-1m-ouF"/>
+                                <constraint firstAttribute="height" constant="14" id="xVz-6O-3Fm"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gv9-dr-5uk">
+                            <rect key="frame" x="105" y="0.0" width="14" height="14"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="14" id="KnJ-zD-PPU"/>
+                                <constraint firstAttribute="height" constant="14" id="WHL-tc-Gfc"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="0.53333333333333333" green="0.55686274509803924" blue="0.61960784313725492" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="VcM-iU-j26" secondAttribute="trailing" id="1Ny-4w-8wv"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="smN-xd-rhZ" secondAttribute="bottom" constant="48" id="4eU-t5-n2Z"/>
+                <constraint firstItem="VcM-iU-j26" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="8va-1U-1Yv"/>
+                <constraint firstItem="0wS-dZ-reb" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="24" id="B4d-bH-MWk"/>
+                <constraint firstItem="smN-xd-rhZ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="24" id="FcW-i5-e6e"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="VcM-iU-j26" secondAttribute="bottom" id="J3C-Yd-o0z"/>
+                <constraint firstItem="smN-xd-rhZ" firstAttribute="top" secondItem="aWR-rm-gcR" secondAttribute="bottom" constant="48" id="Qef-eJ-enh"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="0wS-dZ-reb" secondAttribute="trailing" constant="24" id="UIv-9Q-THK"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="smN-xd-rhZ" secondAttribute="trailing" constant="24" id="Uto-fl-THd"/>
+                <constraint firstItem="aWR-rm-gcR" firstAttribute="centerX" secondItem="VcM-iU-j26" secondAttribute="centerX" id="VPs-9f-HAh"/>
+                <constraint firstItem="VcM-iU-j26" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="zIc-G4-SSg"/>
+            </constraints>
+            <point key="canvasLocation" x="-10" y="73"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

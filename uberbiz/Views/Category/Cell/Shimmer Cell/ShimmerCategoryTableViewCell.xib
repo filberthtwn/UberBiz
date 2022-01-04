@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="311" id="KGk-i7-Jjw" customClass="ShimmerCategoryTableViewCell" customModule="uberbiz" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="329"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="329"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RMv-EV-CZ5" customClass="UberBizShimmerView" customModule="uberbiz" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="329"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W31-pT-bii">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="329"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fre-td-Ja4">
+                                        <rect key="frame" x="16" y="0.0" width="288" height="313"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" verticalCompressionResistancePriority="749" translatesAutoresizingMaskIntoConstraints="NO" id="6SK-0E-sqH">
+                                                <rect key="frame" x="0.0" y="0.0" width="288" height="288"/>
+                                                <color key="backgroundColor" red="0.85096102949999997" green="0.85104340310000004" blue="0.84705942869999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="6SK-0E-sqH" secondAttribute="height" multiplier="1:1" id="OnN-Do-y34"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eZY-HU-FHt">
+                                                <rect key="frame" x="36" y="296" width="216" height="17"/>
+                                                <color key="backgroundColor" red="0.85096102949999997" green="0.85104340310000004" blue="0.84705942869999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="17" id="uzV-Za-Ed8"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="eZY-HU-FHt" secondAttribute="bottom" id="3uq-L6-WMi"/>
+                                            <constraint firstAttribute="trailing" secondItem="6SK-0E-sqH" secondAttribute="trailing" id="HTf-0z-gfd"/>
+                                            <constraint firstItem="6SK-0E-sqH" firstAttribute="top" secondItem="Fre-td-Ja4" secondAttribute="top" id="I1P-d9-bE6"/>
+                                            <constraint firstItem="6SK-0E-sqH" firstAttribute="leading" secondItem="Fre-td-Ja4" secondAttribute="leading" id="Jln-0X-Fon"/>
+                                            <constraint firstItem="eZY-HU-FHt" firstAttribute="top" secondItem="6SK-0E-sqH" secondAttribute="bottom" constant="8" id="VzY-xP-lZS"/>
+                                            <constraint firstItem="eZY-HU-FHt" firstAttribute="centerX" secondItem="Fre-td-Ja4" secondAttribute="centerX" id="XzI-i7-Uze"/>
+                                            <constraint firstItem="eZY-HU-FHt" firstAttribute="width" secondItem="6SK-0E-sqH" secondAttribute="width" multiplier="0.75" id="mkX-aj-UuS"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="Fre-td-Ja4" firstAttribute="leading" secondItem="W31-pT-bii" secondAttribute="leading" constant="16" id="GKB-u4-qTr"/>
+                                    <constraint firstAttribute="bottom" secondItem="Fre-td-Ja4" secondAttribute="bottom" constant="16" id="Xgg-Ya-POy"/>
+                                    <constraint firstAttribute="trailing" secondItem="Fre-td-Ja4" secondAttribute="trailing" constant="16" id="kzg-Ep-ZXI"/>
+                                    <constraint firstItem="Fre-td-Ja4" firstAttribute="top" secondItem="W31-pT-bii" secondAttribute="top" id="pfq-ag-1q1"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="W31-pT-bii" secondAttribute="bottom" id="9dM-Uc-xIR"/>
+                            <constraint firstItem="W31-pT-bii" firstAttribute="top" secondItem="RMv-EV-CZ5" secondAttribute="top" id="OCN-SZ-yDc"/>
+                            <constraint firstItem="W31-pT-bii" firstAttribute="leading" secondItem="RMv-EV-CZ5" secondAttribute="leading" id="bfe-ck-NwG"/>
+                            <constraint firstAttribute="trailing" secondItem="W31-pT-bii" secondAttribute="trailing" id="mbk-4Y-N8c"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="RMv-EV-CZ5" secondAttribute="bottom" id="Iuw-0g-yiM"/>
+                    <constraint firstItem="RMv-EV-CZ5" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="JEN-tF-Wfd"/>
+                    <constraint firstItem="RMv-EV-CZ5" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Sfb-g9-0mn"/>
+                    <constraint firstAttribute="trailing" secondItem="RMv-EV-CZ5" secondAttribute="trailing" id="bSa-je-5GW"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imageV" destination="6SK-0E-sqH" id="1fU-fd-fdj"/>
+                <outlet property="shimmerContainerV" destination="RMv-EV-CZ5" id="Gnv-Bn-19P"/>
+                <outlet property="shimmerContentV" destination="W31-pT-bii" id="Jr0-Hu-KTF"/>
+            </connections>
+            <point key="canvasLocation" x="-10.144927536231885" y="162.38839285714286"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
